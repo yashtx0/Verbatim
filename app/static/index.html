@@ -319,12 +319,7 @@ function activate(id, scrollDoc){
   if(scrollDoc && marks[0]) marks[0].scrollIntoView({behavior:"smooth", block:"center"});
   if(!scrollDoc && box) box.scrollIntoView({behavior:"smooth", block:"nearest"});
 }
-$("q").addEventListener("keydown", (e) => {
-  if (e.key === "Enter" && !$("go").disabled) {
-    e.preventDefault();
-    $("go").click();
-  }
-});
+
 
 // Press Enter in the question box to ask and verify
 $("q").addEventListener("keydown", (e) => {
